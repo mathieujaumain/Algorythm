@@ -1,0 +1,77 @@
+﻿Build started 1/27/2016 3:18:51 PM.
+     1>Project "C:\Users\Mathieu\Documents\Algorythms\Graph\Graph.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Edge.cpp Graph.cpp Node.cpp
+         Node.cpp
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(8): error C2061: syntax error : identifier 'Node'
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(11): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(11): warning C4183: 'From': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(12): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(12): warning C4183: 'To': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(15): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(16): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(8): error C2065: '_cost' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(8): error C2065: 'from' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(8): error C2065: '_from' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(8): error C2065: 'to' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(8): error C2065: '_to' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(11): error C2065: 'from' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\edge.h(12): error C2065: 'to' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(19): error C2227: left of '->getId' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>c:\users\mathieu\documents\algorythms\graph\node.cpp(5): error C2511: 'Node::Node(void)' : overloaded member function not found in 'Node'
+                 c:\users\mathieu\documents\algorythms\graph\node.h(7) : see declaration of 'Node'
+     1>c:\users\mathieu\documents\algorythms\graph\node.cpp(10): error C2084: function 'Node::~Node(void)' already has a body
+                 c:\users\mathieu\documents\algorythms\graph\node.h(10) : see previous definition of '{dtor}'
+         Graph.cpp
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(13): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(13): warning C4183: 'getEdge': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(14): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(23): warning C4183: 'getEdgeTo': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(27): error C2065: 'Edge' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(27): error C2059: syntax error : '>'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(27): error C2976: 'std::vector' : too few template arguments
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(650) : see declaration of 'std::vector'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(9): error C2512: 'std::vector' : no appropriate default constructor available
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(13): error C2678: binary '[' : no operator found which takes a left-hand operand of type 'const std::vector' (or there is no acceptable conversion)
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1196): could be '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1180): or       '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::const_reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type) const'
+                 while trying to match the argument list '(const std::vector, int)'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(16): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(17): error C3536: 'it': cannot be used before it is initialized
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(17): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(17): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         Edge.cpp
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(13): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(13): warning C4183: 'getEdge': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(14): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(23): warning C4183: 'getEdgeTo': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(27): error C2065: 'Edge' : undeclared identifier
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(27): error C2059: syntax error : '>'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(27): error C2976: 'std::vector' : too few template arguments
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(650) : see declaration of 'std::vector'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(9): error C2512: 'std::vector' : no appropriate default constructor available
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(13): error C2678: binary '[' : no operator found which takes a left-hand operand of type 'const std::vector' (or there is no acceptable conversion)
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1196): could be '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1180): or       '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::const_reference std::vector<_Ty,_Alloc>::operator [](_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type) const'
+                 while trying to match the argument list '(const std::vector, int)'
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(16): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(17): error C3536: 'it': cannot be used before it is initialized
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(17): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+     1>c:\users\mathieu\documents\algorythms\graph\node.h(17): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         Generating Code...
+     1>Done Building Project "C:\Users\Mathieu\Documents\Algorythms\Graph\Graph.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.50
